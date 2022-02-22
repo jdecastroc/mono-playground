@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "projects": {
+    "tools-api": "libs/tools-api",
+    "tools-service-shell": "apps/tools/service-shell",
+    "tools-service-shell-e2e": "apps/tools/service-shell-e2e",
+    "tools-ui": "libs/tools-ui",
+    "tools-ui-e2e": "apps/tools-ui-e2e"
+  }
+}

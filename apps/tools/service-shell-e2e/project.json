@@ -1,0 +1,28 @@
+{
+  "root": "apps/tools/service-shell-e2e",
+  "sourceRoot": "apps/tools/service-shell-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/tools/service-shell-e2e/cypress.json",
+        "devServerTarget": "tools-service-shell:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "tools-service-shell:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/tools/service-shell-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["tools-service-shell"]
+}

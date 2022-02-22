@@ -1,0 +1,30 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@lunar-pet/tools-api": ["libs/tools-api/src/index.ts"],
+      "@mono-playground/tools-ui": ["libs/tools-ui/src/index.ts"],
+      "@mono-playground/tools-ui/atoms": ["libs/tools-ui/src/lib/atoms.css.ts"],
+      "@mono-playground/tools-ui/global": [
+        "libs/tools-ui/src/lib/global.css.ts"
+      ],
+      "@mono-playground/tools-ui/sprinkles": [
+        "libs/tools-ui/src/lib/sprinkles.css.ts"
+      ]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
