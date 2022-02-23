@@ -1,0 +1,34 @@
+{
+  "extends": [
+    "plugin:@nrwl/nx/react-typescript",
+    "../../../.eslintrc.json",
+    "next",
+    "next/core-web-vitals"
+  ],
+  "ignorePatterns": ["!**/*"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "parserOptions": {
+        "project": ["apps/tools/service-obelix/tsconfig(.*)?.json"]
+      },
+      "rules": {
+        "@next/next/no-html-link-for-pages": [
+          "error",
+          "apps/tools/service-obelix/pages"
+        ]
+      }
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {}
+    },
+    {
+      "files": ["*.js", "*.jsx"],
+      "rules": {}
+    }
+  ],
+  "env": {
+    "jest": true
+  }
+}

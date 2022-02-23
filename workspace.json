@@ -2,6 +2,10 @@
   "version": 2,
   "projects": {
     "tools-api": "libs/tools-api",
+    "tools-service-asterix": "apps/tools/service-asterix",
+    "tools-service-asterix-e2e": "apps/tools/service-asterix-e2e",
+    "tools-service-obelix": "apps/tools/service-obelix",
+    "tools-service-obelix-e2e": "apps/tools/service-obelix-e2e",
     "tools-service-shell": "apps/tools/service-shell",
     "tools-service-shell-e2e": "apps/tools/service-shell-e2e",
     "tools-ui": "libs/tools-ui",
