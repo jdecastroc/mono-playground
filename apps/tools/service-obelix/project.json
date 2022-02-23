@@ -1,6 +1,6 @@
 {
-  "root": "apps/tools/service-shell",
-  "sourceRoot": "apps/tools/service-shell",
+  "root": "apps/tools/service-obelix",
+  "sourceRoot": "apps/tools/service-obelix",
   "projectType": "application",
   "targets": {
     "build": {
@@ -8,8 +8,8 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "root": "apps/tools/service-shell",
-        "outputPath": "dist/apps/tools/service-shell"
+        "root": "apps/tools/service-obelix",
+        "outputPath": "dist/apps/tools/service-obelix"
       },
       "configurations": {
         "production": {}
@@ -18,13 +18,13 @@
     "serve": {
       "executor": "@nrwl/next:server",
       "options": {
-        "buildTarget": "tools-service-shell:build",
+        "buildTarget": "tools-service-obelix:build",
         "dev": true,
-        "port": 4000
+        "port": 3000
       },
       "configurations": {
         "production": {
-          "buildTarget": "tools-service-shell:build:production",
+          "buildTarget": "tools-service-obelix:build:production",
           "dev": false
         }
       }
@@ -32,14 +32,14 @@
     "export": {
       "executor": "@nrwl/next:export",
       "options": {
-        "buildTarget": "tools-service-shell:build:production"
+        "buildTarget": "tools-service-obelix:build:production"
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/tools/service-shell"],
+      "outputs": ["coverage/apps/tools/service-obelix"],
       "options": {
-        "jestConfig": "apps/tools/service-shell/jest.config.js",
+        "jestConfig": "apps/tools/service-obelix/jest.config.js",
         "passWithNoTests": true
       }
     },
@@ -47,7 +47,7 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/tools/service-shell/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/tools/service-obelix/**/*.{ts,tsx,js,jsx}"]
       }
     }
   },

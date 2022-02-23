@@ -1,0 +1,73 @@
+{
+  "root": "apps/tools/service-asterix",
+  "sourceRoot": "apps/tools/service-asterix/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/apps/tools/service-asterix",
+        "index": "apps/tools/service-asterix/src/index.html",
+        "baseHref": "/",
+        "main": "apps/tools/service-asterix/src/main.tsx",
+        "polyfills": "apps/tools/service-asterix/src/polyfills.ts",
+        "tsConfig": "apps/tools/service-asterix/tsconfig.app.json",
+        "assets": [
+          "apps/tools/service-asterix/src/favicon.ico",
+          "apps/tools/service-asterix/src/assets"
+        ],
+        "styles": ["apps/tools/service-asterix/src/styles.css"],
+        "scripts": [],
+        "webpackConfig": "apps/tools/service-asterix/webpack.config.js"
+      },
+      "configurations": {
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/tools/service-asterix/src/environments/environment.ts",
+              "with": "apps/tools/service-asterix/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/web:dev-server",
+      "options": {
+        "buildTarget": "tools-service-asterix:build",
+        "hmr": true
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "tools-service-asterix:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/tools/service-asterix/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/tools/service-asterix"],
+      "options": {
+        "jestConfig": "apps/tools/service-asterix/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

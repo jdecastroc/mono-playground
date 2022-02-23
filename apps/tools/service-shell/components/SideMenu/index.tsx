@@ -1,8 +1,12 @@
 import { Box } from '@mono-playground/tools-ui';
 import { container } from './styles.css';
-import React from 'react';
+import React, { useCallback } from 'react';
 
 const SideMenu = (props) => {
+  const onSetIndex = useCallback(() => props.onSetWorkspace('index'), []);
+  const onSetAsterix = useCallback(() => props.onSetWorkspace('asterix'), []);
+  const onSetObelix = useCallback(() => props.onSetWorkspace('obelix'), [])
+
   return (
     <Box
       padding="4x"
@@ -12,7 +16,9 @@ const SideMenu = (props) => {
       background="gray-100"
     >
       <Box display="flex" flexDirection="column">
-        Im a side menu
+        <Box onClick={onSetIndex}> Set Index </Box>
+        <Box onClick={onSetAsterix}>Set Asterix</Box>
+        <Box onClick={onSetObelix}>Set Obelix</Box>
       </Box>
     </Box>
   );

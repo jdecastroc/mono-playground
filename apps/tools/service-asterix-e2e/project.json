@@ -1,0 +1,28 @@
+{
+  "root": "apps/tools/service-asterix-e2e",
+  "sourceRoot": "apps/tools/service-asterix-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/tools/service-asterix-e2e/cypress.json",
+        "devServerTarget": "tools-service-asterix:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "tools-service-asterix:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/tools/service-asterix-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["tools-service-asterix"]
+}
