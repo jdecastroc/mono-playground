@@ -1,0 +1,55 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+import Box from '../Box';
+import { theme } from '../css/vars.css';
+import { themeCloud } from '../css/themes/cloud.css';
+import { themeEcommerce } from '../css/themes/ecommerce.css';
+import Text from '../Text';
+import { vars } from '../css/vars.css';
+import { containerStyles, groupStyles } from './styles.css'
+
+<Meta title="Design System/Tokens" />
+
+# Tokens
+
+Let's define a the tokens
+
+<Canvas>
+  <Box display='flex' flexDirection='column' className={theme}>
+    <Box>
+      <Box as='h1'>Colors</Box>
+      <Box display='flex' flexDirection='row' gap='2x' placeItems='flex-start' className={groupStyles}>
+        { Object.keys(vars.color).map((colorKey) => (
+          <Box key={colorKey} display='flex' flexDirection='column' placeItems='center'>
+            <Box background={colorKey} className={containerStyles} borderRadius='1x' />
+            <Text>{colorKey}</Text>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+    <Box>
+      <Box as='h1'>Text Sizes</Box>
+      <Box display='flex' flexDirection='column' gap='2x' placeItems='flex-start' className={groupStyles}>
+        { Object.keys(vars.fontSize).map((fontSizeKey) => (
+            <Box key={fontSizeKey} fontSize={fontSizeKey} borderRadius='1x'>This is a text {fontSizeKey}</Box>
+        ))}
+      </Box>
+    </Box>
+    <Box>
+      <Box as='h1'>Spaces</Box>
+      <Box display='flex' flexDirection='column' gap='2x' placeItems='flex-start' className={groupStyles}>
+        { Object.keys(vars.space).map((spaceKey) => (
+          <Box key={spaceKey} display='flex' flexDirection='row' placeItems='center'>
+            <Box padding={spaceKey} background='gray-800' />
+            <Box>{spaceKey}</Box>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+  </Box>
+  <Box className={themeCloud}>
+    <Box className={containerStyles} background='primary' />
+  </Box>
+  <Box className={themeEcommerce}>
+    <Box className={containerStyles} background='primary' />
+  </Box>
+</Canvas>

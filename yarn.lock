@@ -3393,6 +3393,10 @@
   dependencies:
     "@types/unist" "*"
 
+"@types/mdx@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@types/mdx/-/mdx-2.0.1.tgz#e4c05d355d092d7b58db1abfe460e53f41102ac8"
+
 "@types/mime@^1":
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/@types/mime/-/mime-1.3.2.tgz#93e25bf9ee75fe0fd80b594bc4feb0e862111b5a"
@@ -5242,6 +5246,10 @@ char-regex@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/char-regex/-/char-regex-1.0.2.tgz#d744358226217f981ed58f479b1d6bcc29545dcf"
 
+character-entities-html4@^1.0.0:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/character-entities-html4/-/character-entities-html4-1.1.4.tgz#0e64b0a3753ddbf1fdc044c5fd01d0199a02e125"
+
 character-entities-legacy@^1.0.0:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/character-entities-legacy/-/character-entities-legacy-1.1.4.tgz#94bc1845dce70a5bb9d2ecc748725661293d8fc1"
@@ -6122,6 +6130,12 @@ debug@^3.0.0, debug@^3.1.0, debug@^3.1.1, debug@^3.2.7:
   dependencies:
     ms "^2.1.1"
 
+debug@^4.0.0:
+  version "4.3.4"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.4.tgz#1319f6579357f2338d3337d2cdd4914bb5dcc865"
+  dependencies:
+    ms "2.1.2"
+
 debug@~3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/debug/-/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
@@ -6740,6 +6754,17 @@ eslint-import-resolver-typescript@^2.4.0:
     resolve "^1.20.0"
     tsconfig-paths "^3.9.0"
 
+eslint-mdx@^1.17.0:
+  version "1.17.0"
+  resolved "https://registry.yarnpkg.com/eslint-mdx/-/eslint-mdx-1.17.0.tgz#f5396fa8256386363ee18cdc9ae73a7e6a93acfa"
+  dependencies:
+    cosmiconfig "^7.0.1"
+    remark-mdx "^1.6.22"
+    remark-parse "^8.0.3"
+    remark-stringify "^8.1.1"
+    tslib "^2.3.1"
+    unified "^9.2.2"
+
 eslint-module-utils@^2.7.0, eslint-module-utils@^2.7.2:
   version "2.7.2"
   resolved "https://registry.yarnpkg.com/eslint-module-utils/-/eslint-module-utils-2.7.2.tgz#1d0aa455dcf41052339b63cada8ab5fd57577129"
@@ -6805,6 +6830,22 @@ eslint-plugin-jsx-a11y@6.5.1, eslint-plugin-jsx-a11y@^6.5.1:
     jsx-ast-utils "^3.2.1"
     language-tags "^1.0.5"
     minimatch "^3.0.4"
+
+eslint-plugin-markdown@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-markdown/-/eslint-plugin-markdown-2.2.1.tgz#76b8a970099fbffc6cc1ffcad9772b96911c027a"
+  dependencies:
+    mdast-util-from-markdown "^0.8.5"
+
+eslint-plugin-mdx@^1.17.0:
+  version "1.17.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-mdx/-/eslint-plugin-mdx-1.17.0.tgz#be00f9193e92d595b8869a7e1bf3716edf1dbe9e"
+  dependencies:
+    eslint-mdx "^1.17.0"
+    eslint-plugin-markdown "^2.2.1"
+    synckit "^0.4.1"
+    tslib "^2.3.1"
+    vfile "^4.2.1"
 
 eslint-plugin-react-hooks@4.2.0:
   version "4.2.0"
@@ -8451,6 +8492,10 @@ is-alphabetical@1.0.4, is-alphabetical@^1.0.0:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/is-alphabetical/-/is-alphabetical-1.0.4.tgz#9e7d6b94916be22153745d184c298cbf986a686d"
 
+is-alphanumeric@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/is-alphanumeric/-/is-alphanumeric-1.0.0.tgz#4a9cef71daf4c001c1d81d63d140cf53fd6889f4"
+
 is-alphanumerical@^1.0.0:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/is-alphanumerical/-/is-alphanumerical-1.0.4.tgz#7eb9a2431f855f6b1ef1a78e326df515696c4dbf"
@@ -9786,6 +9831,10 @@ log-update@^4.0.0:
     slice-ansi "^4.0.0"
     wrap-ansi "^6.2.0"
 
+longest-streak@^2.0.1:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/longest-streak/-/longest-streak-2.0.4.tgz#b8599957da5b5dab64dee3fe316fa774597d90e4"
+
 loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
@@ -9874,6 +9923,12 @@ markdown-escapes@^1.0.0:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/markdown-escapes/-/markdown-escapes-1.0.4.tgz#c95415ef451499d7602b91095f3c8e8975f78535"
 
+markdown-table@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/markdown-table/-/markdown-table-2.0.0.tgz#194a90ced26d31fe753d8b9434430214c011865b"
+  dependencies:
+    repeat-string "^1.0.0"
+
 markdown-to-jsx@^7.1.3:
   version "7.1.6"
   resolved "https://registry.yarnpkg.com/markdown-to-jsx/-/markdown-to-jsx-7.1.6.tgz#421487df2a66fe4231d94db653a34da033691e62"
@@ -9892,11 +9947,27 @@ mdast-squeeze-paragraphs@^4.0.0:
   dependencies:
     unist-util-remove "^2.0.0"
 
+mdast-util-compact@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/mdast-util-compact/-/mdast-util-compact-2.0.1.tgz#cabc69a2f43103628326f35b1acf735d55c99490"
+  dependencies:
+    unist-util-visit "^2.0.0"
+
 mdast-util-definitions@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/mdast-util-definitions/-/mdast-util-definitions-4.0.0.tgz#c5c1a84db799173b4dcf7643cda999e440c24db2"
   dependencies:
     unist-util-visit "^2.0.0"
+
+mdast-util-from-markdown@^0.8.5:
+  version "0.8.5"
+  resolved "https://registry.yarnpkg.com/mdast-util-from-markdown/-/mdast-util-from-markdown-0.8.5.tgz#d1ef2ca42bc377ecb0463a987910dae89bd9a28c"
+  dependencies:
+    "@types/mdast" "^3.0.0"
+    mdast-util-to-string "^2.0.0"
+    micromark "~2.11.0"
+    parse-entities "^2.0.0"
+    unist-util-stringify-position "^2.0.0"
 
 mdast-util-to-hast@10.0.1:
   version "10.0.1"
@@ -9914,6 +9985,10 @@ mdast-util-to-hast@10.0.1:
 mdast-util-to-string@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/mdast-util-to-string/-/mdast-util-to-string-1.1.0.tgz#27055500103f51637bd07d01da01eb1967a43527"
+
+mdast-util-to-string@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/mdast-util-to-string/-/mdast-util-to-string-2.0.0.tgz#b8cfe6a713e1091cb5b728fc48885a4767f8b97b"
 
 mdn-data@2.0.14:
   version "2.0.14"
@@ -9983,6 +10058,13 @@ methods@~1.1.2:
 microevent.ts@~0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/microevent.ts/-/microevent.ts-0.1.1.tgz#70b09b83f43df5172d0205a63025bce0f7357fa0"
+
+micromark@~2.11.0:
+  version "2.11.4"
+  resolved "https://registry.yarnpkg.com/micromark/-/micromark-2.11.4.tgz#d13436138eea826383e822449c9a5c50ee44665a"
+  dependencies:
+    debug "^4.0.0"
+    parse-entities "^2.0.0"
 
 micromatch@^3.1.10, micromatch@^3.1.4:
   version "3.1.10"
@@ -11989,7 +12071,7 @@ remark-footnotes@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/remark-footnotes/-/remark-footnotes-2.0.0.tgz#9001c4c2ffebba55695d2dd80ffb8b82f7e6303f"
 
-remark-mdx@1.6.22:
+remark-mdx@1.6.22, remark-mdx@^1.6.22:
   version "1.6.22"
   resolved "https://registry.yarnpkg.com/remark-mdx/-/remark-mdx-1.6.22.tgz#06a8dab07dcfdd57f3373af7f86bd0e992108bbd"
   dependencies:
@@ -12002,7 +12084,7 @@ remark-mdx@1.6.22:
     remark-parse "8.0.3"
     unified "9.2.0"
 
-remark-parse@8.0.3:
+remark-parse@8.0.3, remark-parse@^8.0.3:
   version "8.0.3"
   resolved "https://registry.yarnpkg.com/remark-parse/-/remark-parse-8.0.3.tgz#9c62aa3b35b79a486454c690472906075f40c7e1"
   dependencies:
@@ -12037,6 +12119,25 @@ remark-squeeze-paragraphs@4.0.0:
   dependencies:
     mdast-squeeze-paragraphs "^4.0.0"
 
+remark-stringify@^8.1.1:
+  version "8.1.1"
+  resolved "https://registry.yarnpkg.com/remark-stringify/-/remark-stringify-8.1.1.tgz#e2a9dc7a7bf44e46a155ec78996db896780d8ce5"
+  dependencies:
+    ccount "^1.0.0"
+    is-alphanumeric "^1.0.0"
+    is-decimal "^1.0.0"
+    is-whitespace-character "^1.0.0"
+    longest-streak "^2.0.1"
+    markdown-escapes "^1.0.0"
+    markdown-table "^2.0.0"
+    mdast-util-compact "^2.0.0"
+    parse-entities "^2.0.0"
+    repeat-string "^1.5.4"
+    state-toggle "^1.0.0"
+    stringify-entities "^3.0.0"
+    unherit "^1.0.4"
+    xtend "^4.0.1"
+
 remove-trailing-separator@^1.0.1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/remove-trailing-separator/-/remove-trailing-separator-1.1.0.tgz#c24bce2a283adad5bc3f58e0d48249b92379d8ef"
@@ -12065,7 +12166,7 @@ repeat-element@^1.1.2:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/repeat-element/-/repeat-element-1.1.4.tgz#be681520847ab58c7568ac75fbfad28ed42d39e9"
 
-repeat-string@^1.5.4, repeat-string@^1.6.1:
+repeat-string@^1.0.0, repeat-string@^1.5.4, repeat-string@^1.6.1:
   version "1.6.1"
   resolved "https://registry.yarnpkg.com/repeat-string/-/repeat-string-1.6.1.tgz#8dcae470e1c88abc2d600fff4a776286da75e637"
 
@@ -12986,6 +13087,14 @@ string_decoder@~1.1.1:
   dependencies:
     safe-buffer "~5.1.0"
 
+stringify-entities@^3.0.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/stringify-entities/-/stringify-entities-3.1.0.tgz#b8d3feac256d9ffcc9fa1fefdcf3ca70576ee903"
+  dependencies:
+    character-entities-html4 "^1.0.0"
+    character-entities-legacy "^1.0.0"
+    xtend "^4.0.0"
+
 strip-ansi@6.0.1, strip-ansi@^6.0.0, strip-ansi@^6.0.1:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
@@ -13186,6 +13295,13 @@ symbol.prototype.description@^1.0.0:
 synchronous-promise@^2.0.15:
   version "2.0.15"
   resolved "https://registry.yarnpkg.com/synchronous-promise/-/synchronous-promise-2.0.15.tgz#07ca1822b9de0001f5ff73595f3d08c4f720eb8e"
+
+synckit@^0.4.1:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/synckit/-/synckit-0.4.1.tgz#a8cabedc2456246604465046b37164425c22192e"
+  dependencies:
+    tslib "^2.3.1"
+    uuid "^8.3.2"
 
 tailwindcss@^3.0.15:
   version "3.0.15"
@@ -13693,6 +13809,17 @@ unified@9.2.0:
     trough "^1.0.0"
     vfile "^4.0.0"
 
+unified@^9.2.2:
+  version "9.2.2"
+  resolved "https://registry.yarnpkg.com/unified/-/unified-9.2.2.tgz#67649a1abfc3ab85d2969502902775eb03146975"
+  dependencies:
+    bail "^1.0.0"
+    extend "^3.0.0"
+    is-buffer "^2.0.0"
+    is-plain-obj "^2.0.0"
+    trough "^1.0.0"
+    vfile "^4.0.0"
+
 union-value@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/union-value/-/union-value-1.0.1.tgz#0b6fe7b835aecda61c6ea4d4f02c14221e109847"
@@ -13974,7 +14101,7 @@ vfile-message@^2.0.0:
     "@types/unist" "^2.0.0"
     unist-util-stringify-position "^2.0.0"
 
-vfile@^4.0.0:
+vfile@^4.0.0, vfile@^4.2.1:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/vfile/-/vfile-4.2.1.tgz#03f1dce28fc625c625bc6514350fbdb00fa9e624"
   dependencies:

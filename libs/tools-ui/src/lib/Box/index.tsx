@@ -1,5 +1,5 @@
 import { createBox } from '@dessert-box/react';
-import { atoms } from '../atoms.css';
+import { atoms } from '../css/atoms.css';
 
 export const Box = createBox({ atoms });
 
