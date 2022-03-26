@@ -1,5 +1,5 @@
 import { recipe } from '@vanilla-extract/recipes';
-import { atoms } from '../atoms.css';
+import { atoms } from '../css/atoms.css';
 
 export const buttonRecipe = recipe({
   variants: {

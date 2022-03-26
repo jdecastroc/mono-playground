@@ -1,4 +1,4 @@
-import { Sprinkles } from '../sprinkles.css';
+import { Sprinkles } from '../css/sprinkles.css';
 import { Story, Meta } from '@storybook/react';
 import Box from './';
 

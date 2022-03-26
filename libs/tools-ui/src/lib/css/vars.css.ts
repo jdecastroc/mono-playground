@@ -1,16 +1,17 @@
-import { createGlobalTheme } from '@vanilla-extract/css';
+import { createGlobalTheme, createTheme } from '@vanilla-extract/css';
 import { modularScale } from 'polished';
 import colors from 'tailwindcss/colors';
 
 const createScale = (ratio: number, base: number) => (steps: number) =>
   `${modularScale(steps, base, ratio)}px`;
 
-const spaceScale = createScale(1.4, 4);
-const fontSizeScale = createScale(1.3, 16);
-const lineHeightScale = createScale(1.25, 24);
-const borderRadiusScale = createScale(1.5, 4);
+export const spaceScale = createScale(1.4, 4);
+export const fontSizeScale = createScale(1.3, 16);
+export const lineHeightScale = createScale(1.25, 24);
+export const borderRadiusScale = createScale(1.5, 4);
 
-export const vars = createGlobalTheme(':root', {
+
+export const [theme, vars] = createTheme({
   space: {
     none: '0',
     '0x': spaceScale(0),
@@ -25,7 +26,8 @@ export const vars = createGlobalTheme(':root', {
   },
   color: {
     white: '#fff',
-
+    primary: '#fff',
+    secondary: '#fff',
     'gray-50': colors.gray[50],
     'gray-100': colors.gray[100],
     'gray-200': colors.gray[200],
